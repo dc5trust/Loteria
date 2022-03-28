@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap"
+      rel="stylesheet"
+    />
+    <title>Loteria</title>
+  </head>
+  <body>
+    <section id="loteria-container">
+      <div class="card-container">
+        <div class="cards">
+          <img src="./images/back.png" alt="" class="card-image" />
+          <div class="computer-score-container">
+            <h2 class="computer-score">CPU Score: 0/16</h2>
+          </div>
+        </div>
+        <div class="main-title-container">
+          <!-- <div class="card-title"> -->
+          <h1 class="card-title">Loteria</h1>
+          <!-- </div> -->
+          <div class="card-timer">00:05 Seconds</div>
+          <button id="new-game-btn">New Game</button>
+        </div>
+      </div>
+      <div class="win-status-container">
+        <h2 class="game-status">Click Flipped Card to Begin</h2>
+      </div>
+      <div class="table-loteria-container">
+        <div class="table-loteria user-table">
+          <h3 class="loteria-subtitle">PLAYER 1</h3>
+          <h3 class="loteria-table-number">TABLE 1</h3>
+
+          <div class="box user"></div>
+          <div class="box user"></div>
+          <div class="box user"></div>
+          <div class="box user"></div>
+          <div class="box user"></div>
+          <div class="box user"></div>
+          <div class="box user"></div>
+          <div class="box user"></div>
+          <div class="box user"></div>
+          <div class="box user"></div>
+          <div class="box user"></div>
+          <div class="box user"></div>
+          <div class="box user"></div>
+          <div class="box user"></div>
+          <div class="box user"></div>
+          <div class="box user"></div>
+        </div>
+        <div class="table-loteria">
+          <h3 class="loteria-subtitle">COMPUTER</h3>
+          <h3 class="loteria-table-number">TABLE 2</h3>
+          <div class="box computer"></div>
+          <div class="box computer"></div>
+          <div class="box computer"></div>
+          <div class="box computer"></div>
+          <div class="box computer"></div>
+          <div class="box computer"></div>
+          <div class="box computer"></div>
+          <div class="box computer"></div>
+          <div class="box computer"></div>
+          <div class="box computer"></div>
+          <div class="box computer"></div>
+          <div class="box computer"></div>
+          <div class="box computer"></div>
+          <div class="box computer"></div>
+          <div class="box computer"></div>
+          <div class="box computer"></div>
+        </div>
+      </div>
+    </section>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,214 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+/* 
+
+Global Variables 
+
+*/
+//card deck
+$card-height: 33rem;
+$card-width: 23rem;
+
+//table 1 & 2, card height/width
+$table-height: 17rem;
+$table-width: 12rem;
+
+#loteria-container {
+  min-height: 100vh;
+}
+
+/* 
+
+Buttons
+
+*/
+
+#new-game-btn {
+  padding: 1rem 2.5rem;
+  background-color: rgb(39, 40, 40);
+  border: 1px solid black;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+
+  &:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+  }
+}
+
+/* 
+
+Random Card generator ( the deck of cards )
+
+*/
+.card-container {
+  min-height: 30vh;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+
+  .cards {
+    height: $card-height;
+    width: $card-width;
+    background-color: white;
+    border-radius: 10px;
+    cursor: pointer;
+
+    .computer-score-container {
+      display: none;
+    }
+  }
+
+  .card-image {
+    height: $card-height;
+    width: $card-width;
+    border-radius: 10px;
+    box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.1),
+      0 0.4rem 0.4rem 0 rgba(0, 0, 0, 0.15);
+    z-index: 1;
+  }
+}
+/* 
+
+Application Title & Count Down timer 
+
+*/
+.main-title-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  .card-title {
+    text-align: center;
+    font-size: 12rem;
+    margin-bottom: 3rem;
+    font-family: "Dancing Script", cursive;
+  }
+  .card-timer {
+    font-size: 4.5rem;
+    font-family: "Roboto", sans-serif;
+  }
+}
+
+/* 
+
+Application Status Bar ( winning / losing announcements )
+
+*/
+
+.win-status-container {
+  min-height: 5vh;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  h2 {
+    font-size: 2rem;
+  }
+}
+
+/* 
+
+Table 1 & Table 2
+
+*/
+.table-loteria-container {
+  min-height: 65vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+
+  .loteria-subtitle,
+  .loteria-table-number {
+    position: absolute;
+    font-size: 2rem;
+  }
+
+  .loteria-subtitle {
+    top: 7px;
+    left: 10px;
+  }
+  .loteria-table-number {
+    top: 7px;
+    right: 10px;
+  }
+
+  .table-images {
+    height: $table-height;
+    width: $table-width;
+    box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.1),
+      0 0.4rem 0.4rem 0 rgba(0, 0, 0, 0.15);
+  }
+}
+
+/* 
+
+PLAYER 1 & COMPUTER TABLES
+
+*/
+.table-loteria {
+  background-color: rgb(224, 240, 254);
+  position: relative;
+  height: 78rem;
+  width: 52rem;
+  //   margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, $table-width); // 12
+  grid-template-rows: repeat(4, $table-height); //17
+  grid-gap: 1rem;
+  justify-content: center;
+  align-content: center;
+  box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.3),
+    0 0.4rem 0.4rem 0 rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+
+  .box {
+    height: $table-height;
+    width: $table-width;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .user {
+    cursor: pointer;
+    position: relative;
+  }
+  .computer {
+    position: relative;
+  }
+}
+/* 
+
+Dot is used on whatever the User Clicks on & whenever the computer
+selects something on the table
+
+*/
+.dot {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+  opacity: 0.8;
+  box-shadow: 0 2rem 3rem rgba(33, 33, 33, 0.3),
+    0 0.4rem 0.4rem 0 rgba(0, 0, 0, 0.1);
+  border: 2px solid rgb(255, 255, 255);
+  z-index: 10;
+}
+
+@import "mobile";
