@@ -1,4 +1,4 @@
-# Bingo-Loteria
+# Loteria
 
 ## Loteria is basically Bingo but from Latin America. Rather than using numbers, this game uses unique images that make the game interactive.
 
