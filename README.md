@@ -3,6 +3,7 @@
 ## Loteria is basically Bingo but from Latin America. Rather than using numbers, this game uses unique images that make the game interactive.
 
 ## Link to Web Application 
+https://loteria-bingo.netlify.app
 
 ## Build With 
 <ul>
