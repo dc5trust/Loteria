@@ -13,16 +13,16 @@
 
   .table-loteria-container {
     .table-images {
-      height: 15rem; //17
-      width: 10rem; //12
+      height: 15rem; 
+      width: 10rem; 
     }
   }
 
   .table-loteria {
     height: 71rem;
     width: 44rem;
-    grid-template-rows: repeat(4, 15rem); //17
-    grid-template-columns: repeat(4, 10rem); // 12
+    grid-template-rows: repeat(4, 15rem); 
+    grid-template-columns: repeat(4, 10rem); 
     .box {
       height: 15rem;
       width: 10rem;
@@ -35,16 +35,16 @@
     width: 100%;
     margin: 0;
     .table-images {
-      height: 12rem; //17
-      width: 7rem; //12
+      height: 12rem; 
+      width: 7rem; 
     }
   }
 
   .table-loteria {
     height: 59rem;
     width: 32rem;
-    grid-template-rows: repeat(4, 12rem); //17
-    grid-template-columns: repeat(4, 7rem); // 12
+    grid-template-rows: repeat(4, 12rem); 
+    grid-template-columns: repeat(4, 7rem); 
     .box {
       height: 12rem;
       width: 7rem;
@@ -54,7 +54,6 @@
 
 @media only screen and (max-width: 721px) {
   .card-container {
-    // flex-direction: column-reverse;
 
     .cards {
       .computer-score-container {
@@ -69,8 +68,8 @@
   .table-loteria-container {
     flex-direction: column;
     .table-images {
-      height: 12rem; //17
-      width: 7rem; //12
+      height: 12rem; 
+      width: 7rem; 
     }
   }
 
@@ -78,8 +77,8 @@
     margin-bottom: 2rem;
     height: 59rem;
     width: 32rem;
-    grid-template-rows: repeat(4, 12rem); //17
-    grid-template-columns: repeat(4, 7rem); // 12
+    grid-template-rows: repeat(4, 12rem); 
+    grid-template-columns: repeat(4, 7rem); 
     .box {
       height: 12rem;
       width: 7rem;
@@ -145,8 +144,8 @@
       right: 10px;
     }
     .table-images {
-      height: 9rem; //17
-      width: 6rem; //12
+      height: 9rem; 
+      width: 6rem; 
     }
   }
 
@@ -154,8 +153,8 @@
     margin-bottom: 2rem;
     height: 46rem;
     width: 29rem;
-    grid-template-rows: repeat(4, 9rem); //17
-    grid-template-columns: repeat(4, 6rem); // 12
+    grid-template-rows: repeat(4, 9rem); 
+    grid-template-columns: repeat(4, 6rem); 
     .box {
       height: 9rem;
       width: 6rem;
@@ -164,7 +163,6 @@
 
   #new-game-btn {
     padding: 0.5rem 1rem;
-    // display: none;
   }
 }
 
@@ -207,8 +205,8 @@
     flex-direction: column;
 
     .table-images {
-      height: 10rem; //17
-      width: 8rem; //12
+      height: 10rem; 
+      width: 8rem; 
     }
   }
 
@@ -216,8 +214,8 @@
     margin-bottom: 2rem;
     height: 50rem;
     width: 37rem;
-    grid-template-rows: repeat(4, 10rem); //17
-    grid-template-columns: repeat(4, 8rem); // 12
+    grid-template-rows: repeat(4, 10rem); 
+    grid-template-columns: repeat(4, 8rem); 
     .box {
       height: 10rem;
       width: 8rem;
@@ -225,7 +223,6 @@
   }
   #new-game-btn {
     padding: 0.25rem 0.5rem;
-    // display: none;
   }
 }
 
@@ -272,8 +269,8 @@
     flex-direction: column;
 
     .table-images {
-      height: 8rem; //17
-      width: 6rem; //12
+      height: 8rem; 
+      width: 6rem; 
     }
   }
 
@@ -281,8 +278,8 @@
     margin-bottom: 2rem;
     height: 42rem;
     width: 28rem;
-    grid-template-rows: repeat(4, 8rem); //17
-    grid-template-columns: repeat(4, 6rem); // 12
+    grid-template-rows: repeat(4, 8rem); 
+    grid-template-columns: repeat(4, 6rem); 
     .box {
       height: 8rem;
       width: 6rem;

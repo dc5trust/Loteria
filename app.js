@@ -50,20 +50,17 @@ function displayComputerScore (){
 }
 
 function findComputerMatches (){
-    // let matchCount = 0;
     computerBoxes.forEach((box)=>{
         const matchedElement = box.classList[1];
         const computerClickedElement = box.classList[3]
         if(currentCardShown === parseInt(box.firstChild.classList[1])){
             computerMatchCount++;
-            console.log(computerMatchCount)
             ComputerScore.innerText = `CPU Score: ${computerMatchCount}/16`
             const dot = document.createElement('div');
             dot.classList.add('dot');
             dot.classList.add('dot-computer');
             box.append(dot);
             if(computerMatchCount === 16){
-                // randomInProgress = true;
                 const dotsComputer  = document.querySelectorAll('.dot-computer');
                 dotsComputer.forEach(changeDotsColor);
                 clearInterval(gameTimer);
@@ -88,7 +85,6 @@ function hasUserWon(){
         const matchedElement  = box.classList[2];
         const userClickedElement = box.classList[3];
         //we need sibiling to compare
-        console.log(box.classList[3]);
         if(matchedElement === 'matched' && userClickedElement === 'user-marked'){
             matchCount++;
             if(matchCount === 16){
@@ -128,8 +124,6 @@ function beginGame(){
     gameTimer = setInterval(()=>{
         const millis = Math.floor((Date.now() - start)/1000);
         const countDown = (durationBetweenCards * tenSecondIntervals) - millis;
-        // randomCard();
-        // console.log(millis); 
         if(countDown >= 0){
             displayTimer.innerHTML = `00:0${countDown} Seconds`;
             if((countDown) === 0){
@@ -174,8 +168,6 @@ function createTableCards (tableSelection){
         const randomNumber = Math.floor(Math.random() * nonRepeatingNums.length);
         const imgElement = document.createElement('img');
         imgElement.src =  cardImages[nonRepeatingNums[randomNumber]-1];
-        // console.log('length',nonRepeatingNums.length)
-        // console.log(nonRepeatingNums[randomNumber]);
         imgElement.classList.add('table-images');
         imgElement.classList.add(`${nonRepeatingNums[randomNumber]}`);
         nonRepeatingNums.splice(randomNumber, 1);

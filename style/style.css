@@ -1,8 +1,7 @@
 * {
   padding: 0px;
   margin: 0px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html {
@@ -25,13 +24,12 @@ Buttons
 */
 #new-game-btn {
   padding: 1rem 2.5rem;
-  background-color: #272828;
+  background-color: rgb(39, 40, 40);
   border: 1px solid black;
   border-radius: 10px;
   color: white;
   cursor: pointer;
 }
-
 #new-game-btn:hover {
   background-color: white;
   color: black;
@@ -47,20 +45,11 @@ Random Card generator ( the deck of cards )
   min-height: 30vh;
   width: 90%;
   margin: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
 }
-
 .card-container .cards {
   height: 33rem;
   width: 23rem;
@@ -68,17 +57,14 @@ Random Card generator ( the deck of cards )
   border-radius: 10px;
   cursor: pointer;
 }
-
 .card-container .cards .computer-score-container {
   display: none;
 }
-
 .card-container .card-image {
   height: 33rem;
   width: 23rem;
   border-radius: 10px;
-  -webkit-box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.1), 0 0.4rem 0.4rem 0 rgba(0, 0, 0, 0.15);
-          box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.1), 0 0.4rem 0.4rem 0 rgba(0, 0, 0, 0.15);
+  box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.1), 0 0.4rem 0.4rem 0 rgba(0, 0, 0, 0.15);
   z-index: 1;
 }
 
@@ -88,28 +74,17 @@ Application Title & Count Down timer
 
 */
 .main-title-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
-
 .main-title-container .card-title {
   text-align: center;
   font-size: 12rem;
   margin-bottom: 3rem;
   font-family: "Dancing Script", cursive;
 }
-
 .main-title-container .card-timer {
   font-size: 4.5rem;
   font-family: "Roboto", sans-serif;
@@ -124,17 +99,10 @@ Application Status Bar ( winning / losing announcements )
   min-height: 5vh;
   width: 90%;
   margin: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
-
 .win-status-container h2 {
   font-size: 2rem;
 }
@@ -146,39 +114,29 @@ Table 1 & Table 2
 */
 .table-loteria-container {
   min-height: 65vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-around;
+  align-items: center;
   width: 90%;
   margin: auto;
 }
-
 .table-loteria-container .loteria-subtitle,
 .table-loteria-container .loteria-table-number {
   position: absolute;
   font-size: 2rem;
 }
-
 .table-loteria-container .loteria-subtitle {
   top: 7px;
   left: 10px;
 }
-
 .table-loteria-container .loteria-table-number {
   top: 7px;
   right: 10px;
 }
-
 .table-loteria-container .table-images {
   height: 17rem;
   width: 12rem;
-  -webkit-box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.1), 0 0.4rem 0.4rem 0 rgba(0, 0, 0, 0.15);
-          box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.1), 0 0.4rem 0.4rem 0 rgba(0, 0, 0, 0.15);
+  box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.1), 0 0.4rem 0.4rem 0 rgba(0, 0, 0, 0.15);
   border-radius: 10px;
 }
 
@@ -188,46 +146,30 @@ PLAYER 1 & COMPUTER TABLES
 
 */
 .table-loteria {
-  background-color: #e0f0fe;
+  background-color: rgb(224, 240, 254);
   position: relative;
   height: 78rem;
   width: 52rem;
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (12rem)[4];
-      grid-template-columns: repeat(4, 12rem);
-  -ms-grid-rows: (17rem)[4];
-      grid-template-rows: repeat(4, 17rem);
+  grid-template-columns: repeat(4, 12rem);
+  grid-template-rows: repeat(4, 17rem);
   grid-gap: 1rem;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -webkit-box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.3), 0 0.4rem 0.4rem 0 rgba(0, 0, 0, 0.1);
-          box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.3), 0 0.4rem 0.4rem 0 rgba(0, 0, 0, 0.1);
+  justify-content: center;
+  align-content: center;
+  box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.3), 0 0.4rem 0.4rem 0 rgba(0, 0, 0, 0.1);
   border-radius: 10px;
 }
-
 .table-loteria .box {
   height: 17rem;
   width: 12rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
-
 .table-loteria .user {
   cursor: pointer;
   position: relative;
 }
-
 .table-loteria .computer {
   position: relative;
 }
@@ -242,11 +184,10 @@ selects something on the table
   position: absolute;
   height: 100%;
   width: 100%;
-  background-color: black;
+  background-color: rgb(0, 0, 0);
   opacity: 0.8;
-  -webkit-box-shadow: 0 2rem 3rem rgba(33, 33, 33, 0.3), 0 0.4rem 0.4rem 0 rgba(0, 0, 0, 0.1);
-          box-shadow: 0 2rem 3rem rgba(33, 33, 33, 0.3), 0 0.4rem 0.4rem 0 rgba(0, 0, 0, 0.1);
-  border: 2px solid white;
+  box-shadow: 0 2rem 3rem rgba(33, 33, 33, 0.3), 0 0.4rem 0.4rem 0 rgba(0, 0, 0, 0.1);
+  border: 2px solid rgb(255, 255, 255);
   z-index: 10;
 }
 
@@ -259,24 +200,23 @@ selects something on the table
     height: 23rem;
     width: 15rem;
   }
+
   .table-loteria-container .table-images {
     height: 15rem;
     width: 10rem;
   }
+
   .table-loteria {
     height: 71rem;
     width: 44rem;
-    -ms-grid-rows: (15rem)[4];
-        grid-template-rows: repeat(4, 15rem);
-    -ms-grid-columns: (10rem)[4];
-        grid-template-columns: repeat(4, 10rem);
+    grid-template-rows: repeat(4, 15rem);
+    grid-template-columns: repeat(4, 10rem);
   }
   .table-loteria .box {
     height: 15rem;
     width: 10rem;
   }
 }
-
 @media only screen and (max-width: 990px) {
   .table-loteria-container {
     width: 100%;
@@ -286,20 +226,18 @@ selects something on the table
     height: 12rem;
     width: 7rem;
   }
+
   .table-loteria {
     height: 59rem;
     width: 32rem;
-    -ms-grid-rows: (12rem)[4];
-        grid-template-rows: repeat(4, 12rem);
-    -ms-grid-columns: (7rem)[4];
-        grid-template-columns: repeat(4, 7rem);
+    grid-template-rows: repeat(4, 12rem);
+    grid-template-columns: repeat(4, 7rem);
   }
   .table-loteria .box {
     height: 12rem;
     width: 7rem;
   }
 }
-
 @media only screen and (max-width: 721px) {
   .card-container .cards .computer-score-container {
     display: block;
@@ -307,52 +245,41 @@ selects something on the table
   .card-container .cards .computer-score-container .computer-score {
     font-size: 2rem;
   }
+
   .table-loteria-container {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   .table-loteria-container .table-images {
     height: 12rem;
     width: 7rem;
   }
+
   .table-loteria {
     margin-bottom: 2rem;
     height: 59rem;
     width: 32rem;
-    -ms-grid-rows: (12rem)[4];
-        grid-template-rows: repeat(4, 12rem);
-    -ms-grid-columns: (7rem)[4];
-        grid-template-columns: repeat(4, 7rem);
+    grid-template-rows: repeat(4, 12rem);
+    grid-template-columns: repeat(4, 7rem);
   }
   .table-loteria .box {
     height: 12rem;
     width: 7rem;
   }
+
   #new-game-btn {
     padding: 0.7rem 1.4rem;
   }
 }
-
 @media only screen and (max-width: 560px) {
   .card-container {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
+    flex-direction: column-reverse;
   }
   .card-container .cards {
     height: 23rem;
     width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: space-around;
+    align-items: center;
   }
   .card-container .cards .computer-score-container {
     display: block;
@@ -361,21 +288,13 @@ selects something on the table
     height: 23rem;
     width: 17rem;
   }
+
   .main-title-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    flex-direction: row;
   }
   .main-title-container .card-title {
     font-size: 4rem;
@@ -384,14 +303,12 @@ selects something on the table
   .main-title-container .card-timer {
     font-size: 2rem;
   }
+
   .table-loteria-container {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   .table-loteria-container .loteria-subtitle,
-  .table-loteria-container .loteria-table-number {
+.table-loteria-container .loteria-table-number {
     position: absolute;
     font-size: 1.4rem;
   }
@@ -407,42 +324,33 @@ selects something on the table
     height: 9rem;
     width: 6rem;
   }
+
   .table-loteria {
     margin-bottom: 2rem;
     height: 46rem;
     width: 29rem;
-    -ms-grid-rows: (9rem)[4];
-        grid-template-rows: repeat(4, 9rem);
-    -ms-grid-columns: (6rem)[4];
-        grid-template-columns: repeat(4, 6rem);
+    grid-template-rows: repeat(4, 9rem);
+    grid-template-columns: repeat(4, 6rem);
   }
   .table-loteria .box {
     height: 9rem;
     width: 6rem;
   }
+
   #new-game-btn {
     padding: 0.5rem 1rem;
   }
 }
-
 @media only screen and (max-width: 440px) {
   .card-container {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
+    flex-direction: column-reverse;
   }
   .card-container .cards {
     height: 18rem;
     width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: space-around;
+    align-items: center;
   }
   .card-container .cards .computer-score-container {
     display: block;
@@ -451,16 +359,11 @@ selects something on the table
     height: 18rem;
     width: 12rem;
   }
+
   .main-title-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
   }
   .main-title-container .card-title {
@@ -470,52 +373,41 @@ selects something on the table
     font-size: 2rem;
     font-family: "Roboto", sans-serif;
   }
+
   .table-loteria-container {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   .table-loteria-container .table-images {
     height: 10rem;
     width: 8rem;
   }
+
   .table-loteria {
     margin-bottom: 2rem;
     height: 50rem;
     width: 37rem;
-    -ms-grid-rows: (10rem)[4];
-        grid-template-rows: repeat(4, 10rem);
-    -ms-grid-columns: (8rem)[4];
-        grid-template-columns: repeat(4, 8rem);
+    grid-template-rows: repeat(4, 10rem);
+    grid-template-columns: repeat(4, 8rem);
   }
   .table-loteria .box {
     height: 10rem;
     width: 8rem;
   }
+
   #new-game-btn {
     padding: 0.25rem 0.5rem;
   }
 }
-
 @media only screen and (max-width: 375px) {
   .card-container {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
+    flex-direction: column-reverse;
   }
   .card-container .cards {
     height: 12rem;
     width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: space-around;
+    align-items: center;
   }
   .card-container .cards .computer-score-container {
     display: block;
@@ -527,16 +419,11 @@ selects something on the table
     height: 12rem;
     width: 9rem;
   }
+
   .main-title-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
   }
   .main-title-container .card-title {
@@ -546,31 +433,28 @@ selects something on the table
     font-size: 1.5rem;
     font-family: "Roboto", sans-serif;
   }
+
   .table-loteria-container {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
   .table-loteria-container .table-images {
     height: 8rem;
     width: 6rem;
   }
+
   .table-loteria {
     margin-bottom: 2rem;
     height: 42rem;
     width: 28rem;
-    -ms-grid-rows: (8rem)[4];
-        grid-template-rows: repeat(4, 8rem);
-    -ms-grid-columns: (6rem)[4];
-        grid-template-columns: repeat(4, 6rem);
+    grid-template-rows: repeat(4, 8rem);
+    grid-template-columns: repeat(4, 6rem);
   }
   .table-loteria .box {
     height: 8rem;
     width: 6rem;
   }
+
   #new-game-btn {
     padding: 0.18rem 0.38rem;
   }
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
