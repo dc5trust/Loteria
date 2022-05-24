@@ -21,6 +21,7 @@ let counts = 0;
 let randomInProgress = false;
 let gameTimer;
 let computerMatchCount = 0;
+
 insertImagesToArray();
 renderBothTables();
 
@@ -118,7 +119,7 @@ function beginGame(){
     randomInProgress = !randomInProgress;
     nonRepeatingNumbers = createArrayOfNumbers();
     randomCard();
-    gameStatus.textContent = 'Game is now Active!';
+    gameStatus.textContent = 'Playing...';
     let start = Date.now();
     let tenSecondIntervals = 1;
     gameTimer = setInterval(()=>{
@@ -147,8 +148,11 @@ function insertImagesToArray(){
 
 
 function renderBothTables(){
-    createTableCards(userBoxes);
-    createTableCards(computerBoxes);
+    //create two unique tablas( player cards )
+    let nonRepeatingNums = createArrayOfNumbers();
+
+    createTableCards(userBoxes, nonRepeatingNums);
+    createTableCards(computerBoxes, nonRepeatingNums);
 }
 
 function createArrayOfNumbers(){
@@ -161,8 +165,9 @@ function createArrayOfNumbers(){
     return numbers;
 }
 
-function createTableCards (tableSelection){
-    let nonRepeatingNums = createArrayOfNumbers();
+function createTableCards (tableSelection, nonRepeatingNums){
+    // let nonRepeatingNums = createArrayOfNumbers();
+    
    
     tableSelection.forEach((box, index)=>{
         const randomNumber = Math.floor(Math.random() * nonRepeatingNums.length);
