@@ -478,18 +478,18 @@ selects something on the table
     width: 14rem;
   }
   .table-loteria-container .table-images {
-    height: 13rem;
+    height: 12rem;
     width: 10rem;
   }
 
   .table-loteria {
-    height: 62.5rem;
+    height: 60rem;
     width: 45rem;
-    grid-template-rows: repeat(4, 13rem);
+    grid-template-rows: repeat(4, 12rem);
     grid-template-columns: repeat(4, 10rem);
   }
   .table-loteria .box {
-    height: 13rem;
+    height: 12rem;
     width: 10rem;
   }
 }/*# sourceMappingURL=style.css.map */
