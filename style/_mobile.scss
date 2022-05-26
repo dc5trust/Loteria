@@ -290,10 +290,12 @@
   }
 }
 
-//only screen and (min-height:625px),
+
 //, only screen and (max-width: 1250px)
-@media only screen and (max-height: 900px){
+//only screen and (min-height:625px),
+@media only screen and (min-height: 900px) and (max-height: 1000px){
   .main-title-container {
+    // background-color: grey;
     // display: flex;
     // justify-content: center;
     // align-items: center;
