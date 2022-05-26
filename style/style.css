@@ -458,7 +458,7 @@ selects something on the table
     padding: 0.18rem 0.38rem;
   }
 }
-@media only screen and (max-height: 750px), only screen and (max-width: 1250px) {
+@media only screen and (max-height: 750px) {
   .main-title-container .card-title {
     font-size: 5.5rem;
   }
