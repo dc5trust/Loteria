@@ -51,8 +51,8 @@ Random Card generator ( the deck of cards )
   flex-direction: row;
 }
 .card-container .cards {
-  height: 33rem;
-  width: 23rem;
+  height: 30rem;
+  width: 20rem;
   background-color: white;
   border-radius: 10px;
   cursor: pointer;
@@ -61,8 +61,8 @@ Random Card generator ( the deck of cards )
   display: none;
 }
 .card-container .card-image {
-  height: 33rem;
-  width: 23rem;
+  height: 30rem;
+  width: 20rem;
   border-radius: 10px;
   box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.1), 0 0.4rem 0.4rem 0 rgba(0, 0, 0, 0.15);
   z-index: 1;
@@ -134,8 +134,8 @@ Table 1 & Table 2
   right: 10px;
 }
 .table-loteria-container .table-images {
-  height: 17rem;
-  width: 12rem;
+  height: 15rem;
+  width: 11rem;
   box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.1), 0 0.4rem 0.4rem 0 rgba(0, 0, 0, 0.15);
   border-radius: 10px;
 }
@@ -148,11 +148,11 @@ PLAYER 1 & COMPUTER TABLES
 .table-loteria {
   background-color: rgb(224, 240, 254);
   position: relative;
-  height: 78rem;
-  width: 52rem;
+  height: 71rem;
+  width: 49rem;
   display: grid;
-  grid-template-columns: repeat(4, 12rem);
-  grid-template-rows: repeat(4, 17rem);
+  grid-template-columns: repeat(4, 11rem);
+  grid-template-rows: repeat(4, 15rem);
   grid-gap: 1rem;
   justify-content: center;
   align-content: center;
@@ -160,8 +160,8 @@ PLAYER 1 & COMPUTER TABLES
   border-radius: 10px;
 }
 .table-loteria .box {
-  height: 17rem;
-  width: 12rem;
+  height: 15rem;
+  width: 11rem;
   display: flex;
   justify-content: center;
   align-items: center;

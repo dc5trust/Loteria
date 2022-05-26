@@ -12,12 +12,12 @@ Global Variables
 
 */
 //card deck
-$card-height: 33rem;
-$card-width: 23rem;
+$card-height: 30rem;
+$card-width: 20rem;
 
 //table 1 & 2, card height/width
-$table-height: 17rem;
-$table-width: 12rem;
+$table-height: 15rem;
+$table-width: 11rem;
 
 #loteria-container {
   min-height: 100vh;
@@ -57,6 +57,7 @@ Random Card generator ( the deck of cards )
   justify-content: space-around;
   align-items: center;
   flex-direction: row;
+  
 
   .cards {
     height: $card-height;
@@ -165,8 +166,10 @@ PLAYER 1 & COMPUTER TABLES
 .table-loteria {
   background-color: rgb(224, 240, 254);
   position: relative;
-  height: 78rem;
-  width: 52rem;
+  height: 71rem;
+  width: 49rem;
+  // height: 71rem;
+  //   width: 44rem;
   //   margin: auto;
   display: grid;
   grid-template-columns: repeat(4, $table-width); // 12
