@@ -458,38 +458,38 @@ selects something on the table
     padding: 0.18rem 0.38rem;
   }
 }
-@media only screen and (max-height: 820px) {
+@media only screen and (max-height: 900px) {
   .main-title-container .card-title {
-    font-size: 5.5rem;
+    font-size: 10rem;
   }
   .main-title-container .card-timer {
     font-size: 3rem;
   }
 
   .card-container {
-    height: 15vh;
+    min-height: 20vh;
   }
   .card-container .cards {
-    height: 15rem;
-    width: 10rem;
+    height: 19rem;
+    width: 14rem;
   }
   .card-container .card-image {
-    height: 15rem;
-    width: 10rem;
+    height: 19rem;
+    width: 14rem;
   }
   .table-loteria-container .table-images {
-    height: 8rem;
-    width: 6rem;
+    height: 13rem;
+    width: 10rem;
   }
 
   .table-loteria {
-    height: 41rem;
-    width: 29rem;
-    grid-template-rows: repeat(4, 8rem);
-    grid-template-columns: repeat(4, 6rem);
+    height: 62.5rem;
+    width: 45rem;
+    grid-template-rows: repeat(4, 13rem);
+    grid-template-columns: repeat(4, 10rem);
   }
   .table-loteria .box {
-    height: 8rem;
-    width: 6rem;
+    height: 13rem;
+    width: 10rem;
   }
 }/*# sourceMappingURL=style.css.map */
