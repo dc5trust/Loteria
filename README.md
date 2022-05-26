@@ -31,5 +31,4 @@ https://loteria-bingo.netlify.app
 ## Roadmap 
 <ul>
   <li>add sounds</li>
-  <li>Eliminate draws</li>
 </ul>
