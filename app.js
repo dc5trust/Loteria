@@ -14,7 +14,7 @@ const newGameBtn = document.querySelector('#new-game-btn');
 
 //global variables
 let hasCreatedNumArray = false;
-let durationBetweenCards = 5;
+let durationBetweenCards = 5; //5
 let nonRepeatingNumbers;
 let currentCardShown;
 let counts = 0;
@@ -46,9 +46,6 @@ function randomCard (){
         }
 }
 
-function displayComputerScore (){
-
-}
 
 function findComputerMatches (){
     computerBoxes.forEach((box)=>{
@@ -56,7 +53,7 @@ function findComputerMatches (){
         const computerClickedElement = box.classList[3]
         if(currentCardShown === parseInt(box.firstChild.classList[1])){
             computerMatchCount++;
-            ComputerScore.innerText = `CPU Score: ${computerMatchCount}/16`
+            ComputerScore.innerText = `CPU Score: ${computerMatchCount}/16`;
             const dot = document.createElement('div');
             dot.classList.add('dot');
             dot.classList.add('dot-computer');
@@ -66,7 +63,7 @@ function findComputerMatches (){
                 dotsComputer.forEach(changeDotsColor);
                 clearInterval(gameTimer);
                 gameStatus.textContent = `The Computer has won the Game!`;
-                randomInProgress = !randomInProgress;
+                // randomInProgress = !randomInProgress;
             }
         }
     });
