@@ -224,21 +224,21 @@ selects something on the table
   }
   .table-loteria-container .table-images {
     height: 12rem;
-    width: 7rem;
+    width: 8rem;
   }
 
   .table-loteria {
     height: 59rem;
-    width: 32rem;
+    width: 37rem;
     grid-template-rows: repeat(4, 12rem);
-    grid-template-columns: repeat(4, 7rem);
+    grid-template-columns: repeat(4, 8rem);
   }
   .table-loteria .box {
     height: 12rem;
-    width: 7rem;
+    width: 8rem;
   }
 }
-@media only screen and (max-width: 721px) {
+@media only screen and (max-width: 751px) {
   .card-container .cards .computer-score-container {
     display: block;
   }
@@ -444,7 +444,7 @@ selects something on the table
 
   .table-loteria {
     margin-bottom: 2rem;
-    height: 42rem;
+    height: 40.5rem;
     width: 28rem;
     grid-template-rows: repeat(4, 8rem);
     grid-template-columns: repeat(4, 6rem);
