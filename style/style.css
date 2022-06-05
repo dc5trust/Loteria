@@ -378,20 +378,20 @@ selects something on the table
     flex-direction: column;
   }
   .table-loteria-container .table-images {
-    height: 10rem;
-    width: 8rem;
+    height: 8.5rem;
+    width: 7rem;
   }
 
   .table-loteria {
     margin-bottom: 2rem;
-    height: 50rem;
-    width: 37rem;
-    grid-template-rows: repeat(4, 10rem);
-    grid-template-columns: repeat(4, 8rem);
+    height: 42.5rem;
+    width: 33rem;
+    grid-template-rows: repeat(4, 8.5rem);
+    grid-template-columns: repeat(4, 7rem);
   }
   .table-loteria .box {
-    height: 10rem;
-    width: 8rem;
+    height: 8.5rem;
+    width: 7rem;
   }
 
   #new-game-btn {

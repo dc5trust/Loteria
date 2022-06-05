@@ -205,20 +205,20 @@
     flex-direction: column;
 
     .table-images {
-      height: 10rem; 
-      width: 8rem; 
+      height: 8.5rem; //10
+      width: 7rem;  //8
     }
   }
 
   .table-loteria {
     margin-bottom: 2rem;
-    height: 50rem;
-    width: 37rem;
-    grid-template-rows: repeat(4, 10rem); 
-    grid-template-columns: repeat(4, 8rem); 
+    height: 42.5rem; // 50
+    width: 33rem;
+    grid-template-rows: repeat(4, 8.5rem); //10
+    grid-template-columns: repeat(4, 7rem); //8
     .box {
-      height: 10rem;
-      width: 8rem;
+      height: 8.5rem; //10
+      width: 7rem; //8
     }
   }
   #new-game-btn {
