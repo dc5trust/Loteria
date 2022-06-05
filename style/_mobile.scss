@@ -69,19 +69,19 @@
     flex-direction: column;
     .table-images {
       height: 12rem; 
-      width: 7rem; 
+      width: 8rem; 
     }
   }
 
   .table-loteria {
     margin-bottom: 2rem;
     height: 59rem;
-    width: 32rem;
+    width: 36.5rem;
     grid-template-rows: repeat(4, 12rem); 
-    grid-template-columns: repeat(4, 7rem); 
+    grid-template-columns: repeat(4, 8rem); 
     .box {
       height: 12rem;
-      width: 7rem;
+      width: 8rem;
     }
   }
 
